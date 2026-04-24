@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+/* ─── Base ─────────────────────────────────────────────── */
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ─── Color helpers ─────────────────────────────────────── */
+
+.bg-teal    { background-color: #49b6b6; }
+.text-teal  { color: #49b6b6; }
+.bg-rose    { background-color: #c66b81; }
+.text-rose  { color: #c66b81; }
+.bg-yellow  { background-color: #f2e29b; }
+.text-yellow{ color: #f2e29b; }
+.border-teal{ border-color: #49b6b6; }
+
+/* ─── Dot grid ──────────────────────────────────────────── */
+
+.dot-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+
+/* ─── Animations ────────────────────────────────────────── */
+
+@keyframes float {
+    0%   { transform: translateY(0px)   rotate(0deg); }
+    50%  { transform: translateY(-20px) rotate(5deg); }
+    100% { transform: translateY(0px)   rotate(0deg); }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* ─── Modal ─────────────────────────────────────────────── */
+
+.modal-active {
+    overflow: hidden;
+}
+
+/* ─── Utility ───────────────────────────────────────────── */
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
