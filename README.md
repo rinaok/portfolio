@@ -1,5 +1,7 @@
 # Rina Oksman — Portfolio
 
+https://rinaok.github.io/portfolio/
+
 Personal portfolio website for **Rina Oksman**, Web & Game Developer.  
 Bridging the gap between deep systems and playful interactivity.
 
